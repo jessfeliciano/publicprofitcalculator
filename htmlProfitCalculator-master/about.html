@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" color-mode="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="This calculator can be used to calculate the estimated profit of selling an item based on user input and various eBay fees.">
+  <meta name="keywords" content="eBay, eBay Calculator, eBay Profit Calculator, Profit Calculator">
+  <meta name="author" content="Jessica Feliciano">
+  <title>About | Ebay Profit Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css" type="text/css" media="all">
+  <script src="components/headernav.js" type="text/javascript" defer></script>
+  <script src="components/footer.js" type="text/javascript" defer></script>
+
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MPCMW2T');</script>
+    <!-- End Google Tag Manager -->
+    </head>
+<body id="default_theme" class="it_service">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MPCMW2T"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!--- Navigation Header -->
+  <header-component></header-component>
+
+
+
+<br>
+
+<!-- Content -->
+<main class="color-mode">
+  <section class="color-mode__section">
+    <div class="content">
+      <h1>How the Profit Calculator for eBay Works</h1>
+      <p>There are a number of calculations we run in the background that help us ultimately determine Net Profit and ROI %.</p>
+      <p><strong>Here's a list of what we do calculate:</strong></p>
+      <ul>
+        <li>eBay Final Listing Fee</li>
+        <li>eBay Shipping Value Fee</li>
+        <li>Paypal Fee</li>
+      </ul>
+      <p><strong>How we calculate eBay fees:</strong></p>
+      <p>eBay has a number of different fees it charges sellers, but this calculator considers two of the bigger ones:</p>
+      <ul>
+        <li>Final Listing Value Fee</li>
+        <li>Shipping Charge to Buyer Fee (if you charge buyer a shipping)</li>
+      </ul>
+      <p>Both of these fees are set by eBay at 10%. </p>
+      <p><strong>How we calculate Paypal fees:</strong></p>
+      <p>Paypal's fee is pretty straight forward as well. Paypal charges 2.9% on the total sale to the customer (this includes the listing price and any shipping you charge) and then Paypal tacks on $0.30.</p>
+      <p>None of these fees are affected by any sales tax that might be charged to the customer, so keep that in mind.</p>
+      <p><strong>How we calculate Net Profit:</strong></p>
+      <p>The net profit calculation is pretty straight forward, we add the following together to get total cost:</p>
+      <ul>
+        <li>Item cost</li>
+        <li>eBay fees</li>
+        <li>Paypal fee</li>
+      </ul>
+      <p>Once we've calculated total cost, we then calculate total sale. We calculate total sale by adding the following together:</p>
+      <ul>
+        <li>Listing price</li>
+        <li>Shipping cost to buyer</li>
+      </ul>
+      <p>Once we have those two calculations then we're able to calculate net profit:</p>
+      <p>Net Profit = Total Sale - Total Cost</p>
+      <p><strong>How we calculate ROI:</strong></p>
+      <p>Now that we know your net profit, we can then calculate your ROI:</p>
+      <p>(Net Profit / Total Cost) * 100</p>
+      <p><strong>Numbers Breakdown:</strong></p>
+      <p>If you want to see the numbers breakdown for each listing you calculate, all of these numbers are printed to the Dev Console under user messages, so feel free to see calculation results there!</p>
+
+    </div>
+  </section>
+</main>
+
+<!-- Footer Content -->
+<footer-component></footer-component>
+
+
+<!-- Importing Main.js file -->
+  <script src="main.js"></script>
+
+  </body>
+</html>

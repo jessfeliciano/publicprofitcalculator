@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" color-mode="light">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="This calculator can be used to calculate the estimated profit of selling an item based on user input and various eBay fees.">
+    <meta name="keywords" content="eBay, eBay Calculator, eBay Profit Calculator, Profit Calculator, Geeked Out Collecting">
+    <meta name="author" content="Jessica Feliciano">
+    <title>Profit Calculator for eBay | Geeked Out Collecting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MPCMW2T');</script>
+    <!-- End Google Tag Manager -->
+
+    </head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MPCMW2T"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- Navbar Start-->
+  <header id="default_header">
+    <div class="header_bottom">
+        <nav class="nav-bar" id="navbar">
+           <div class="brand-title">Profit Calculator for eBay</div>
+                <a href="#" class="toggle-button">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </a>
+                <div class="nav-links active" id="navigation">
+                <ul>
+                  <li><a class="active" href="index.html">Home</a></li>
+                  <li><a class="active" href="about.html">How It Works</a></li>
+                  <li><a class="active" href="profitCalculator.html">Profit Calculator</a></li>
+                  <li><a class="active" href="bgscalc.html">BGS Calculator</a></li>
+                  <li><a class="active" href="https://www.geekedoutcollecting.com" target="_blank" style="background-color:#292929">More Resources</a></li>
+                </ul>
+                </div>
+        </nav>
+      </div>
+  </header>
+  <!-- Navbar End-->
+
+<br>
+
+<!-- Body Content -->
+<main class="color-mode" id="main-section">
+<section class="color-mode__section">
+  <div class="row" id="calculations" >
+    <div class="results">
+      <table style="width:400px">
+        <tr>
+            <td><h3 class="leftSide" id="roundNumber">Round: </h3></td>
+            <td><h3 class = "rightSide" id="winner">Winner: </h3></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <br>
+
+  <!--
+  <table style="width:400px">
+    <tr>
+        <td><h3 class="leftSide" id="roundNumber">Round: </h3></td>
+        <td><h3 class = "leftSide" id="winner">Winner: </h3></td>
+    </tr>
+
+  </table>
+-->
+
+<br>
+    <form>
+      <button type="button" id="calculationButton" class="button button-block bouncy" onclick="numberGenerator()">Run Generator</button>
+      <button type="button" id="resetButton"class="button button-block bouncy" onclick="resetCalculator()" style="animation-delay:0.07s"> Start Over </button>
+
+      </form>
+
+<br>
+  </section>
+</main>
+
+<!-- Footer Content -->
+<footer>
+  <div class="row">
+    <p class="footer" style="padding:2rem"><a href="#">Home</a> -
+      <a href="./about.html">How It Works</a> -
+      <a href="https://www.geekedoutcollecting.com" target="_blank">More Resources</a> -
+      <a href="./privacy-policy.html">Privacy Policy</a> -
+      <a href="./sitemap.xml">Sitemap XML</a>
+  </br>
+  <a href='https://www.geekedoutcollecting.com' target='_blank'>Geeked Out Collecting, Copyright </a>&copy; 2020
+  <br>
+  <strong>Developed by Geeked Out Studios</strong>
+</p>
+</br>
+  </div>
+</footer>
+
+  <script defer src="js/random-generator.js"></script>
+
+<!-- Allows the toggle to update nav class to active - apart of mobile responsive efforts -->
+  <script id="rendered-js" >
+const toggleButton = document.getElementsByClassName('toggle-button')[0];
+const navbarLinks = document.getElementsByClassName('nav-links')[0];
+const mainSection = document.getElementsByClassName('color-mode')[0];
+
+toggleButton.addEventListener('click', () => {
+navbarLinks.classList.toggle('active');
+mainSection.classList.toggle('responsive')
+});
+//# sourceURL=pen.js
+</script>
+
+  </body>
+</html>
